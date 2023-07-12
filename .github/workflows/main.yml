@@ -18,3 +18,5 @@ jobs:
       - name: Update README
         env:
           PAT: ${{ secrets.PAT }} # Reference the PAT secret
+        run: |
+          echo "New content" >> README.md
