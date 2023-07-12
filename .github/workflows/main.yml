@@ -1,6 +1,7 @@
 name: Update README
 
 on:
+  workflow_dispatch:
   schedule:
     # Runs every hour
     - cron: "0 * * * *"
