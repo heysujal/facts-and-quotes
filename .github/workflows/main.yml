@@ -18,11 +18,3 @@ jobs:
       - name: Update README
         env:
           PAT: ${{ secrets.PAT }} # Reference the PAT secret
-        run: |
-          echo "New content" >> README.md
-          git config user.name "Sujal Gupta"
-          git config user.email "sujalgupta6100@gmail.com"
-          git add README.md
-          git commit -m "Update README"
-          git remote set-url origin https://github.com/heysujal/facts-and-quotes.git
-          git push origin HEAD:main
